@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: e2e29508-config
+  namespace: default
+data:
+  APP_ENV: "production"
+  SERVICE_NAME: "e2e29508"
+  DATABASE_URL: "postgresql://$DATABASE_USER:$DATABASE_PASSWORD@e2e29508-postgres-rw.e2e29508.svc.cluster.local:5432/e2e29508"
